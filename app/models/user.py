@@ -57,7 +57,7 @@ class User:
         }
 
 
-def add_user(
+def add_new_user(
     username: str,
     email: str,
     home_location: Country,
