@@ -22,9 +22,4 @@ def add_user():
         data["username"], data["email"], data["home_loc"], data["send_loc"]
     )
 
-    response_dict = {
-        "error": error,
-        "status": status,
-    }
-
-    return jsonify(response_dict)
+    return jsonify(status=status, error=error)
