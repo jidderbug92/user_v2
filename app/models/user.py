@@ -87,6 +87,7 @@ def add_user(
     """
     # 1. Pre-Work
     normalized_username = username.lower()
+    conn = None
 
     try:
         conn = connect()
