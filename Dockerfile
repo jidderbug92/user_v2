@@ -4,7 +4,6 @@ FROM python:3.11-slim
 # 2. Set environment variables (important for Flask)
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV FLASK_APP=main.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 # 3. Set working directory
@@ -25,6 +24,3 @@ COPY . .
 
 # 6. Expose the Flask default port
 EXPOSE 5000
-
-# 7. Start Flask app (this keeps the container alive)
-CMD ["flask", "run"]
