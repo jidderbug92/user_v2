@@ -24,5 +24,3 @@ COPY . .
 
 # 6. Expose the Flask default port
 EXPOSE 5000
-
-
